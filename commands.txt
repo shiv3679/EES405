@@ -1,3 +1,7 @@
+Hii, this is me again
+
+
+
 shiv@stormbreaker:~/Documents/GitHub/EES405/lab_session_01$ ncdump -h air.mon.ltm.nc 
 Command 'ncdump' not found, but can be installed with:
 sudo apt install netcdf-bin
