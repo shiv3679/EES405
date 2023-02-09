@@ -1,0 +1,121 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx} %don't remove this package, it loads the institute logo and other figures
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{centernot}
+\usepackage{mathrsfs}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+% \usepackage{fancyvrb}
+% \usepackage[dvipsnames]{xcolor}
+% \usepackage{listings}
+
+% \definecolor{codegreen}{rgb}{0,0.6,0}
+% \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+% \definecolor{codepurple}{rgb}{0.58,0,0.82}
+% \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+%------------------------------------------------------------
+% Don't change anything above
+%------------------------------------------------------------
+
+\begin{document}
+\title{PHY411 Report: Assignment 3}
+\author{
+ Name: Shiv Shankar Singh \\
+ Roll: MS18006 \\ 
+ email: ms18006@iisermohali.ac.in \\
+ Lab session: 3  \\ % if you are absent write ``absent''
+}
+
+\date{}
+
+\maketitle
+\vskip 15pt
+\hrule
+%\vskip 8pt
+\tableofcontents
+\vskip 15pt
+\hrule
+
+% \newpage
+%------------------------------------------------------------
+% Introduction 
+%------------------------------------------------------------
+
+
+\section{Introduction} 
+ High-energy particles passing through matter lose energy due to the various mechanism. Briefly, as a particle travels through matter, it loses its energy due to ionization, bremsstrahlung, direct pair production and photo-nuclear interaction. Over a broad energy range, ionization energy losses is the the dominant energy loss mechanism whereas later three processes becomes more important as the particle energy increases. The Ionisation Energy Loss can be determined by: 
+
+\begin{equation}\textcolor{red}{\boxed{
+    \displaystyle -\left\langle{\frac {dE}{dx}}\right\rangle ={\frac {4\pi }{m_{e}c^{2}}}\cdot {\frac {nz^{2}}{\beta ^{2}}}\cdot \left({\frac {e^{2}}{4\pi \varepsilon _{0}}}\right)^{2}\cdot \left[\ln \left({\frac {2m_{e}c^{2}\beta ^{2}}{I\cdot (1-\beta ^{2})}}\right)-\beta ^{2}\right]}}
+\end{equation}
+
+
+This formula is called the Bethe-Bloch formula. The electron density in this formula of the material can be calculated by: 
+\begin{equation}\textcolor{red}{\boxed{
+    n={\frac {N_{A}\cdot Z\cdot \rho }{A\cdot M_{u}}}}}
+\end{equation}
+
+
+The value of relativistic momentum is given by:
+\begin{equation}\textcolor{red}{\boxed{
+    p = \frac{E(E+2mc^2)}{c^2}}}
+\end{equation}
+
+The value of $\beta$ is given by:
+\begin{equation}\textcolor{red}{\boxed{
+    \beta^2 = 1-\frac{m^{2}c^4}{(E + mc^2)^2}}}
+\end{equation}
+
+
+I is the mean ionisation potential and its value is given by:
+
+
+\begin{equation}\textcolor{red}{\boxed{
+    \frac{I}{Z} =
+\begin{cases}
+     12 + \frac{7}{Z} eV ,& \text{if } Z \le 13\\
+     9.76 + 58.8Z^{-1.19} eV ,& \text{if } Z \geq 13
+\end{cases}}}
+\end{equation}
+
+
+In this assignment, we will work with multiple particles passing through a detection of $10 \times 10 \times 10   \text{ cm}.$ The particles are:
+
+
+We also estimate what is the minimum energy required
+for a muon and an electron to penetrate through an unit depth of the hypothetical active
+volume made out of each element.
+\newpage
+%------------------------------------------------------------
+% Design and Implementation
+%------------------------------------------------------------
+\section{Problem-1}
+\begin{enumerate}
+    \item Plot energy spectrum of each particle.
+    \item Calculate energy loss for each particle (you should use the energy loss due to
+ionization alone)
+\begin{enumerate}
+    \item Plot momentum vs $\displaystyle{\frac{dE}{dx}}$ plot for each particle.
+    \item Plot momentum vs $\displaystyle{\frac{dE}{dx}}$  plot for all particles in single plot.
+\end{enumerate}
+\end{enumerate}
+\subsection{Design and Implementation}
+
+\end{document}
