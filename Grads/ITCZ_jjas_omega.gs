@@ -1,0 +1,10 @@
+'reinit'
+'sdfopen /home/shiv/Documents/GitHub/EES405/datasets/omega.1980.2020.jjas.nc'
+'set lev 500'
+'set gxout shaded'
+'a = -1*omega'
+'d a'
+'run cbar'
+'draw title ITCZ JJAS Omega'
+'printim /home/shiv/Documents/GitHub/EES405/datasets/itcz.jjas.omega.png'
+
