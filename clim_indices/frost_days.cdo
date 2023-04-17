@@ -1,0 +1,72 @@
+cdo -P 12 -v -splityear tmin.1960.2020.nc tmin_
+cdo -P 12 -v -splityear tmax.1960.2020.nc tmax_
+
+cdo -P 12 -v -sub -eca_etr tmin_1960.nc tmax_1960.nc etr.ref.nc eca_etr-1960.nc
+cdo -P 12 -v -sub -eca_etr tmin_1961.nc tmax_1961.nc etr.ref.nc eca_etr-1961.nc
+cdo -P 12 -v -sub -eca_etr tmin_1962.nc tmax_1962.nc etr.ref.nc eca_etr-1962.nc
+cdo -P 12 -v -sub -eca_etr tmin_1963.nc tmax_1963.nc etr.ref.nc eca_etr-1963.nc
+cdo -P 12 -v -sub -eca_etr tmin_1964.nc tmax_1964.nc etr.ref.nc eca_etr-1964.nc
+cdo -P 12 -v -sub -eca_etr tmin_1965.nc tmax_1965.nc etr.ref.nc eca_etr-1965.nc
+cdo -P 12 -v -sub -eca_etr tmin_1966.nc tmax_1966.nc etr.ref.nc eca_etr-1966.nc
+cdo -P 12 -v -sub -eca_etr tmin_1967.nc tmax_1967.nc etr.ref.nc eca_etr-1967.nc
+cdo -P 12 -v -sub -eca_etr tmin_1968.nc tmax_1968.nc etr.ref.nc eca_etr-1968.nc
+cdo -P 12 -v -sub -eca_etr tmin_1969.nc tmax_1969.nc etr.ref.nc eca_etr-1969.nc
+cdo -P 12 -v -sub -eca_etr tmin_1970.nc tmax_1970.nc etr.ref.nc eca_etr-1970.nc
+cdo -P 12 -v -sub -eca_etr tmin_1971.nc tmax_1971.nc etr.ref.nc eca_etr-1971.nc
+cdo -P 12 -v -sub -eca_etr tmin_1972.nc tmax_1972.nc etr.ref.nc eca_etr-1972.nc
+cdo -P 12 -v -sub -eca_etr tmin_1973.nc tmax_1973.nc etr.ref.nc eca_etr-1973.nc
+cdo -P 12 -v -sub -eca_etr tmin_1974.nc tmax_1974.nc etr.ref.nc eca_etr-1974.nc
+cdo -P 12 -v -sub -eca_etr tmin_1975.nc tmax_1975.nc etr.ref.nc eca_etr-1975.nc
+cdo -P 12 -v -sub -eca_etr tmin_1976.nc tmax_1976.nc etr.ref.nc eca_etr-1976.nc
+cdo -P 12 -v -sub -eca_etr tmin_1977.nc tmax_1977.nc etr.ref.nc eca_etr-1977.nc
+cdo -P 12 -v -sub -eca_etr tmin_1978.nc tmax_1978.nc etr.ref.nc eca_etr-1978.nc
+cdo -P 12 -v -sub -eca_etr tmin_1979.nc tmax_1979.nc etr.ref.nc eca_etr-1979.nc
+cdo -P 12 -v -sub -eca_etr tmin_1980.nc tmax_1980.nc etr.ref.nc eca_etr-1980.nc
+cdo -P 12 -v -sub -eca_etr tmin_1981.nc tmax_1981.nc etr.ref.nc eca_etr-1981.nc
+cdo -P 12 -v -sub -eca_etr tmin_1982.nc tmax_1982.nc etr.ref.nc eca_etr-1982.nc
+cdo -P 12 -v -sub -eca_etr tmin_1983.nc tmax_1983.nc etr.ref.nc eca_etr-1983.nc
+cdo -P 12 -v -sub -eca_etr tmin_1984.nc tmax_1984.nc etr.ref.nc eca_etr-1984.nc
+cdo -P 12 -v -sub -eca_etr tmin_1985.nc tmax_1985.nc etr.ref.nc eca_etr-1985.nc
+cdo -P 12 -v -sub -eca_etr tmin_1986.nc tmax_1986.nc etr.ref.nc eca_etr-1986.nc
+cdo -P 12 -v -sub -eca_etr tmin_1987.nc tmax_1987.nc etr.ref.nc eca_etr-1987.nc
+cdo -P 12 -v -sub -eca_etr tmin_1988.nc tmax_1988.nc etr.ref.nc eca_etr-1988.nc
+cdo -P 12 -v -sub -eca_etr tmin_1989.nc tmax_1989.nc etr.ref.nc eca_etr-1989.nc
+cdo -P 12 -v -sub -eca_etr tmin_1990.nc tmax_1990.nc etr.ref.nc eca_etr-1990.nc
+cdo -P 12 -v -sub -eca_etr tmin_1991.nc tmax_1991.nc etr.ref.nc eca_etr-1991.nc
+cdo -P 12 -v -sub -eca_etr tmin_1992.nc tmax_1992.nc etr.ref.nc eca_etr-1992.nc
+cdo -P 12 -v -sub -eca_etr tmin_1993.nc tmax_1993.nc etr.ref.nc eca_etr-1993.nc
+cdo -P 12 -v -sub -eca_etr tmin_1994.nc tmax_1994.nc etr.ref.nc eca_etr-1994.nc
+cdo -P 12 -v -sub -eca_etr tmin_1995.nc tmax_1995.nc etr.ref.nc eca_etr-1995.nc
+cdo -P 12 -v -sub -eca_etr tmin_1996.nc tmax_1996.nc etr.ref.nc eca_etr-1996.nc
+cdo -P 12 -v -sub -eca_etr tmin_1997.nc tmax_1997.nc etr.ref.nc eca_etr-1997.nc
+cdo -P 12 -v -sub -eca_etr tmin_1998.nc tmax_1998.nc etr.ref.nc eca_etr-1998.nc
+cdo -P 12 -v -sub -eca_etr tmin_1999.nc tmax_1999.nc etr.ref.nc eca_etr-1999.nc
+cdo -P 12 -v -sub -eca_etr tmin_2000.nc tmax_2000.nc etr.ref.nc eca_etr-2000.nc
+cdo -P 12 -v -sub -eca_etr tmin_2001.nc tmax_2001.nc etr.ref.nc eca_etr-2001.nc
+cdo -P 12 -v -sub -eca_etr tmin_2002.nc tmax_2002.nc etr.ref.nc eca_etr-2002.nc
+cdo -P 12 -v -sub -eca_etr tmin_2003.nc tmax_2003.nc etr.ref.nc eca_etr-2003.nc
+cdo -P 12 -v -sub -eca_etr tmin_2004.nc tmax_2004.nc etr.ref.nc eca_etr-2004.nc
+cdo -P 12 -v -sub -eca_etr tmin_2005.nc tmax_2005.nc etr.ref.nc eca_etr-2005.nc
+cdo -P 12 -v -sub -eca_etr tmin_2006.nc tmax_2006.nc etr.ref.nc eca_etr-2006.nc
+cdo -P 12 -v -sub -eca_etr tmin_2007.nc tmax_2007.nc etr.ref.nc eca_etr-2007.nc
+cdo -P 12 -v -sub -eca_etr tmin_2008.nc tmax_2008.nc etr.ref.nc eca_etr-2008.nc
+cdo -P 12 -v -sub -eca_etr tmin_2009.nc tmax_2009.nc etr.ref.nc eca_etr-2009.nc
+cdo -P 12 -v -sub -eca_etr tmin_2010.nc tmax_2010.nc etr.ref.nc eca_etr-2010.nc
+cdo -P 12 -v -sub -eca_etr tmin_2011.nc tmax_2011.nc etr.ref.nc eca_etr-2011.nc
+cdo -P 12 -v -sub -eca_etr tmin_2012.nc tmax_2012.nc etr.ref.nc eca_etr-2012.nc
+cdo -P 12 -v -sub -eca_etr tmin_2013.nc tmax_2013.nc etr.ref.nc eca_etr-2013.nc
+cdo -P 12 -v -sub -eca_etr tmin_2014.nc tmax_2014.nc etr.ref.nc eca_etr-2014.nc
+cdo -P 12 -v -sub -eca_etr tmin_2015.nc tmax_2015.nc etr.ref.nc eca_etr-2015.nc
+cdo -P 12 -v -sub -eca_etr tmin_2016.nc tmax_2016.nc etr.ref.nc eca_etr-2016.nc
+cdo -P 12 -v -sub -eca_etr tmin_2017.nc tmax_2017.nc etr.ref.nc eca_etr-2017.nc
+cdo -P 12 -v -sub -eca_etr tmin_2018.nc tmax_2018.nc etr.ref.nc eca_etr-2018.nc
+cdo -P 12 -v -sub -eca_etr tmin_2019.nc tmax_2019.nc etr.ref.nc eca_etr-2019.nc
+cdo -P 12 -v -sub -eca_etr tmin_2020.nc tmax_2020.nc etr.ref.nc eca_etr-2020.nc
+
+
+cdo -mergetime eca_etr-1960.nc eca_etr-1961.nc eca_etr-1962.nc eca_etr-1963.nc eca_etr-1964.nc eca_etr-1965.nc eca_etr-1966.nc eca_etr-1967.nc eca_etr-1968.nc eca_etr-1969.nc eca_etr-1970.nc eca_etr-1971.nc eca_etr-1972.nc eca_etr-1973.nc eca_etr-1974.nc eca_etr-1975.nc eca_etr-1976.nc eca_etr-1977.nc eca_etr-1978.nc eca_etr-1979.nc eca_etr-1980.nc eca_etr-1981.nc eca_etr-1982.nc eca_etr-1983.nc eca_etr-1984.nc eca_etr-1985.nc eca_etr-1986.nc eca_etr-1987.nc eca_etr-1988.nc eca_etr-1989.nc eca_etr-1990.nc eca_etr-1991.nc eca_etr-1992.nc eca_etr-1993.nc eca_etr-1994.nc eca_etr-1995.nc eca_etr-1996.nc eca_etr-1997.nc eca_etr-1998.nc eca_etr-1999.nc eca_etr-2000.nc eca_etr-2001.nc eca_etr-2002.nc eca_etr-2003.nc eca_etr-2004.nc eca_etr-2005.nc eca_etr-2006.nc eca_etr-2007.nc eca_etr-2008.nc eca_etr-2009.nc eca_etr-2010.nc eca_etr-2011.nc eca_etr-2012.nc eca_etr-2013.nc eca_etr-2014.nc eca_etr-2015.nc eca_etr-2016.nc eca_etr-2017.nc eca_etr-2018.nc eca_etr-2019.nc eca_etr-2020.nc eca_etr-year.nc
+
+cdo fldsum eca_etr-year.nc etr.hist.nc
+
+rm -rf eca_* tmin_* tmax_* eca_etr-year.nc
+
