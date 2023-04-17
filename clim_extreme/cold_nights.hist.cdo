@@ -1,0 +1,44 @@
+cdo -selyear,1960/1990 /media/student/data/ClimData/era5/era5_land/land_era5_daily_tmin_1940_2021.nc tmin.1960.1990.nc
+cdo -splityear tmin.1960.1990.nc tmin_
+
+cdo -eca_tn10p tmin_1960.nc tmin_1960.nc eca_tn10p-1960.nc
+cdo -eca_tn10p tmin_1961.nc tmin_1961.nc eca_tn10p-1961.nc
+cdo -eca_tn10p tmin_1962.nc tmin_1962.nc eca_tn10p-1962.nc
+cdo -eca_tn10p tmin_1963.nc tmin_1963.nc eca_tn10p-1963.nc
+cdo -eca_tn10p tmin_1964.nc tmin_1964.nc eca_tn10p-1964.nc
+cdo -eca_tn10p tmin_1965.nc tmin_1965.nc eca_tn10p-1965.nc
+cdo -eca_tn10p tmin_1966.nc tmin_1966.nc eca_tn10p-1966.nc
+cdo -eca_tn10p tmin_1967.nc tmin_1967.nc eca_tn10p-1967.nc
+cdo -eca_tn10p tmin_1968.nc tmin_1968.nc eca_tn10p-1968.nc
+cdo -eca_tn10p tmin_1969.nc tmin_1969.nc eca_tn10p-1969.nc
+cdo -eca_tn10p tmin_1970.nc tmin_1970.nc eca_tn10p-1970.nc
+cdo -eca_tn10p tmin_1971.nc tmin_1971.nc eca_tn10p-1971.nc
+cdo -eca_tn10p tmin_1972.nc tmin_1972.nc eca_tn10p-1972.nc
+cdo -eca_tn10p tmin_1973.nc tmin_1973.nc eca_tn10p-1973.nc
+cdo -eca_tn10p tmin_1974.nc tmin_1974.nc eca_tn10p-1974.nc
+cdo -eca_tn10p tmin_1975.nc tmin_1975.nc eca_tn10p-1975.nc
+cdo -eca_tn10p tmin_1976.nc tmin_1976.nc eca_tn10p-1976.nc
+cdo -eca_tn10p tmin_1977.nc tmin_1977.nc eca_tn10p-1977.nc
+cdo -eca_tn10p tmin_1978.nc tmin_1978.nc eca_tn10p-1978.nc
+cdo -eca_tn10p tmin_1979.nc tmin_1979.nc eca_tn10p-1979.nc
+cdo -eca_tn10p tmin_1980.nc tmin_1980.nc eca_tn10p-1980.nc
+cdo -eca_tn10p tmin_1981.nc tmin_1981.nc eca_tn10p-1981.nc
+cdo -eca_tn10p tmin_1982.nc tmin_1982.nc eca_tn10p-1982.nc
+cdo -eca_tn10p tmin_1983.nc tmin_1983.nc eca_tn10p-1983.nc
+cdo -eca_tn10p tmin_1984.nc tmin_1984.nc eca_tn10p-1984.nc
+cdo -eca_tn10p tmin_1985.nc tmin_1985.nc eca_tn10p-1985.nc
+cdo -eca_tn10p tmin_1986.nc tmin_1986.nc eca_tn10p-1986.nc
+cdo -eca_tn10p tmin_1987.nc tmin_1987.nc eca_tn10p-1987.nc
+cdo -eca_tn10p tmin_1988.nc tmin_1988.nc eca_tn10p-1988.nc
+cdo -eca_tn10p tmin_1989.nc tmin_1989.nc eca_tn10p-1989.nc
+cdo -eca_tn10p tmin_1990.nc tmin_1990.nc eca_tn10p-1990.nc
+
+
+
+cdo -mergetime eca_tn10p-1960.nc eca_tn10p-1961.nc eca_tn10p-1962.nc eca_tn10p-1963.nc eca_tn10p-1964.nc eca_tn10p-1965.nc eca_tn10p-1966.nc eca_tn10p-1967.nc eca_tn10p-1968.nc eca_tn10p-1969.nc eca_tn10p-1970.nc eca_tn10p-1971.nc eca_tn10p-1972.nc eca_tn10p-1973.nc eca_tn10p-1974.nc eca_tn10p-1975.nc eca_tn10p-1976.nc eca_tn10p-1977.nc eca_tn10p-1978.nc eca_tn10p-1979.nc eca_tn10p-1980.nc eca_tn10p-1981.nc eca_tn10p-1982.nc eca_tn10p-1983.nc eca_tn10p-1984.nc eca_tn10p-1985.nc eca_tn10p-1986.nc eca_tn10p-1987.nc eca_tn10p-1988.nc eca_tn10p-1989.nc eca_tn10p-1990.nc eca_tn10p-year.nc
+
+cdo -fldsum eca_tn10p-year.nc eca_tn10p.hist.global.nc
+
+
+rm -rf eca_tn10p-1940.nc eca_tn10p-1941.nc eca_tn10p-1942.nc eca_tn10p-1943.nc eca_tn10p-1944.nc eca_tn10p-1945.nc eca_tn10p-1946.nc eca_tn10p-1947.nc eca_tn10p-1948.nc eca_tn10p-1949.nc eca_tn10p-1950.nc eca_tn10p-1951.nc eca_tn10p-1952.nc eca_tn10p-1953.nc eca_tn10p-1954.nc eca_tn10p-1955.nc eca_tn10p-1956.nc eca_tn10p-1957.nc eca_tn10p-1958.nc eca_tn10p-1959.nc eca_tn10p-1960.nc eca_tn10p-1961.nc eca_tn10p-1962.nc eca_tn10p-1963.nc eca_tn10p-1964.nc eca_tn10p-1965.nc eca_tn10p-1966.nc eca_tn10p-1967.nc eca_tn10p-1968.nc eca_tn10p-1969.nc eca_tn10p-1970.nc eca_tn10p-1971.nc eca_tn10p-1972.nc eca_tn10p-1973.nc eca_tn10p-1974.nc eca_tn10p-1975.nc eca_tn10p-1976.nc eca_tn10p-1977.nc eca_tn10p-1978.nc eca_tn10p-1979.nc eca_tn10p-1980.nc eca_tn10p-1981.nc eca_tn10p-1982.nc eca_tn10p-1983.nc eca_tn10p-1984.nc eca_tn10p-1985.nc eca_tn10p-1986.nc eca_tn10p-1987.nc eca_tn10p-1988.nc eca_tn10p-1989.nc eca_tn10p-1990.nc eca_tn10p-1991.nc eca_tn10p-1992.nc eca_tn10p-1993.nc eca_tn10p-1994.nc eca_tn10p-1995.nc eca_tn10p-1996.nc eca_tn10p-1997.nc eca_tn10p-1998.nc eca_tn10p-1999.nc eca_tn10p-2000.nc eca_tn10p-2001.nc eca_tn10p-2002.nc eca_tn10p-2003.nc eca_tn10p-2004.nc eca_tn10p-2005.nc eca_tn10p-2006.nc eca_tn10p-2007.nc eca_tn10p-2008.nc eca_tn10p-2009.nc eca_tn10p-2010.nc eca_tn10p-2011.nc eca_tn10p-2012.nc eca_tn10p-2013.nc eca_tn10p-2014.nc eca_tn10p-2015.nc eca_tn10p-2016.nc eca_tn10p-2017.nc eca_tn10p-2018.nc eca_tn10p-2019.nc eca_tn10p-2020.nc eca_tn10p-2021.nc eca_tn10p-2022.nc eca_tn10p-year-WG-count.nceca_r20mm-year.nc eca_tn10p-year-WG.nc eca_tn10p-year.nc
+
