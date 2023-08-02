@@ -3997,3 +3997,16 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.code-block {
+		white-space: pre-wrap;       /* CSS 2.1 */
+		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		white-space: -pre-wrap;      /* Opera 4-6 */
+		white-space: -o-pre-wrap;    /* Opera 7 */
+		word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		overflow: auto;              /* Add horizontal scroll bar if needed */
+		width: 100%;                 /* Define width here */
+		padding: 5px;
+		background-color: #f5f5f5;   /* Add a background color to the code block */
+	}
+	
