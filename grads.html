@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GrADS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Add some custom CSS to create a two-column layout */
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+            .column {
+                flex: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                text-align: left; /* Align the text to the right */
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">EES405</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Resources</a></li>
+											<li><a href="elements.html">Courses/Syllabus</a></li>
+											<li><a href="#"></a>Discussion Forum</li>
+											<li><a href="#">Interactive Terminal</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+                <article id="main">
+                    <header>
+                        <h2>GrADS in EES405</h2>
+                        <p>Introduction and setup for GrADS environment used in the course</p>
+                    </header>
+                    <section class="wrapper style5">
+                        <div class="inner">
+                    
+                            <h3>GrADS Scripts and Plots for EES405</h3>
+                            
+                            <p>GrADS (Grid Analysis and Display System) is an important tool in the field of climate science and meteorology. Its robust data handling capabilities and rich suite of graphic visualizations make it an excellent resource for analyzing and displaying complex climate datasets. GrADS is particularly effective in working with gridded data, allowing for a wide range of data exploration, manipulation, and visualization techniques. These capabilities make it widely adopted in the climate science community for tasks such as creating climatological averages, anomalies, and other derived fields. In this course, we will be using GrADS to visualize various atmospheric parameters, aiding our understanding of the intricate dynamics of the Earth's climate system.</p>
+        
+                    
+                            <!-- Code 1 and Plot 1 -->
+                            <h4>GrADS Script: Divergence</h4>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="code-wrapper">
+                                        <pre id="code-block-1" class="code-block">
+                    'reinit'
+                    'sdfopen uwnd.jjas.200hpa.nc'
+                    'sdfopen vwnd.jjas.200hpa.nc'
+                    'set gxout shaded'
+                    'd hdivg(uwnd,vwnd.2)'
+                    'set gxout vector and stream'
+                    'd skip(uwnd,2,2);vwnd.2;mag(uwnd,vwnd.2)'
+                    'run cbar'
+                    'draw title Divergence at 200hPa' 
+                    'printim divergence.png'
+                                        </pre>
+                                        <button onclick="copyToClipboard('code-block-1')">Copy to Clipboard</button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <img src="images/divergence.png" alt="GrADS plot" style="width:100%;max-width:400px">
+                                </div>
+                            </div>
+                    
+                            <!-- Code 2 and Plot 2 -->
+                            <h4>GrADS Script: ITCZ DJF</h4>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="code-wrapper">
+                                        <pre id="code-block-2" class="code-block">
+                    'reinit'
+                    'sdfopen prate.1980.2020.djf.timmean.nc'
+                    'set gxout shaded'
+                    'a = prate*86400'
+                    'd a'
+                    'run cbar'
+                    'sdfopen uwnd.1980.2020.djf.nc'
+                    'set dfile 2'
+                    'set lev 1000'
+                    'sdfopen vwnd.1980.2020.djf.nc'
+                    'set dfile 3'
+                    'set lev 1000' 
+                    'd skip(uwnd.2,3,3);vwnd'
+                    'draw title ITCZ DJF with prate and (u,v)'
+                    'printim itcz.djf.prate.uv.png'
+                                        </pre>
+                                        <button onclick="copyToClipboard('code-block-2')">Copy to Clipboard</button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <img src="images/itcz.djf.prate.uv.png" alt="GrADS plot" style="width:100%;max-width:400px">
+                                </div>
+                            </div>
+                    
+                            <!-- Code 3 and Plot 3 -->
+                            <h4>GrADS Script: U Wind at 200hPa</h4>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="code-wrapper">
+                                        <pre id="code-block-3" class="code-block">
+                    'reinit'
+                    'sdfopen uwnd.annual.timmean.nc'
+                    'set lev 200'
+                    'set gxout shaded'
+                    'd uwnd'
+                    'run cbar'
+                    'set gxout vector'
+                    'd skip(uwnd,5,5);uwnd'
+                    'draw title ITCZ ANNUAL uwind at 200hPa'
+                    'printim itcz.uwnd.200hpa.png'
+                                        </pre>
+                                        <button onclick="copyToClipboard('code-block-3')">Copy to Clipboard</button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <img src="images/itcz.uwnd.200hpa.png" alt="GrADS plot" style="width:100%;max-width:400px">
+                                </div>
+                            </div>
+                    
+                            <!-- Code 4 and Plot 4 -->
+                            <h4>GrADS Script: Omega</h4>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="code-wrapper">
+                                        <pre id="code-block-4" class="code-block">
+                    'reinit'
+                    'sdfopen omega.1980.2020.jjas.nc'
+                    'set lev 500'
+                    'set gxout shaded'
+                    'a = -1*omega'
+                    'd a'
+                    'run cbar'
+                    'draw title ITCZ JJAS Omega'
+                    'printim itcz.jjas.omega.png'
+                                        </pre>
+                                        <button onclick="copyToClipboard('code-block-4')">Copy to Clipboard</button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <img src="images/itcz.jjas.omega.png" alt="GrADS plot" style="width:100%;max-width:400px">
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </section>
+                    
+                </article>
+                
+
+<script>
+function copyToClipboard(elementId) {
+    var copyText = document.getElementById(elementId).innerText;
+
+    var textarea = document.createElement("textarea");
+    textarea.textContent = copyText;
+    textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        return document.execCommand("copy"); // Security exception may be thrown by some browsers.
+    } catch (ex) {
+        console.warn("Copy to clipboard failed.", ex);
+        return false;
+    } finally {
+        document.body.removeChild(textarea);
+    }
+}
+</script>
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <!-- <li><a href="#" class="icon fas fa-globe"><span class="label">Website</span></a></li> -->
+                        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Weather and Climate Modelling Research Group (IISER Mohali)</li>
+                        <li>Design: <a href="https://github.com/shiv3679/EES405">Shiv Shankar Singh</a></li>
+                    </ul>
+                </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
