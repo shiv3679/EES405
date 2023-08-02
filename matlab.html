@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MATLAB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">EES405</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Resources</a></li>
+											<li><a href="elements.html">Courses/Syllabus</a></li>
+											<li><a href="#"></a>Discussion Forum</li>
+											<li><a href="#">Interactive Terminal</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+                <article id="main">
+                    <header>
+                        <h2>MATLAB</h2>
+                        <p>Introduction and setup for MATLAB environment used in the course</p>
+                    </header>
+                    <section class="wrapper style5">
+                        <div class="inner">
+                            <h3>MATLAB for EES405</h3>
+                            <p>MATLAB (Matrix Laboratory) is a powerful computing environment that is widely used in many scientific and engineering fields, including Earth and climate sciences. With its efficient handling of matrix operations and a rich set of toolboxes, MATLAB makes data analysis, algorithm development, and visualization straightforward and effective. It has robust functionality for reading, writing and manipulating netCDF files, a data format broadly used in climate science.</p>
+                
+                            <h4>Reading NetCDF Files</h4>
+                            <div class="code-wrapper">
+                                <pre id="code-block-4" class="code-block">
+                % Reading a netCDF file
+                filename = 'file.nc';
+                ncdisp(filename)
+                
+                % Extracting a variable
+                var = ncread(filename, 'variable_name');
+                                </pre>
+                                <button onclick="copyToClipboard('code-block-4')">Copy to Clipboard</button>
+                            </div>
+                
+                            <h4>Matrix Manipulations</h4>
+                            <div class="code-wrapper">
+                                <pre id="code-block-5" class="code-block">
+                % Creating a matrix
+                A = [1 2 3; 4 5 6; 7 8 9];
+                
+                % Transposing a matrix
+                B = A';
+                
+                % Multiplying matrices
+                C = A * B;
+                
+                % Element-wise multiplication
+                D = A .* B;
+                
+                % Inverting a matrix
+                E = inv(A);
+                                </pre>
+                                <button onclick="copyToClipboard('code-block-5')">Copy to Clipboard</button>
+                            </div>
+                            <p>MATLAB's versatility and ease of use makes it an indispensable tool in Earth and climate sciences, whether for developing complex climate models, analysing large datasets or visualizing climate patterns. For more details, refer to the <a href="https://www.mathworks.com/help/matlab/" target="_blank">official MATLAB documentation</a>.</p>
+                        </div>
+                    </section>
+                </article>
+                
+                
+                
+
+<script>
+function copyToClipboard(elementId) {
+    var copyText = document.getElementById(elementId).innerText;
+
+    var textarea = document.createElement("textarea");
+    textarea.textContent = copyText;
+    textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        return document.execCommand("copy"); // Security exception may be thrown by some browsers.
+    } catch (ex) {
+        console.warn("Copy to clipboard failed.", ex);
+        return false;
+    } finally {
+        document.body.removeChild(textarea);
+    }
+}
+</script>
+
+                
+
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <!-- <li><a href="#" class="icon fas fa-globe"><span class="label">Website</span></a></li> -->
+                        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Weather and Climate Modelling Research Group (IISER Mohali)</li>
+                        <li>Design: <a href="https://github.com/shiv3679/EES405">Shiv Shankar Singh</a></li>
+                    </ul>
+                </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
