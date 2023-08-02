@@ -55,27 +55,10 @@ conda install numpy matplotlib xarray cartopy netcdf4 pylab
                 </pre>
                 <button onclick="copyToClipboard('code-block-1')">Copy to Clipboard</button>
             </div>
-
+            <hr>
             <h3>Common Python Code for EES405</h3>
             <p>Here's a common piece of code that we'll be using throughout this course. You can copy it to use as a starting point for your own code:</p>
-            <div class="code-wrapper">
-                <pre id="code-block-2" class="code-block">
-import cartopy as cp
-import cartopy.feature as cfeature
-import cartopy.crs as ccrs
-import matplotlib.pyplot as plt
-import xarray as xr
-import numpy as np
-
-data = xr.open_dataset('air.mon.ltm.nc')
-data = data['air']
-
-fig = plt.figure(figsize=(32,32))
-ax = fig.add_subplot(1,1,1,projection=ccrs.PlateCarree(central_longitude=0.0, globe=None))
-# rest of your code here...
-                </pre>
-                <button onclick="copyToClipboard('code-block-2')">Copy to Clipboard</button>
-            </div>
+            <iframe src="/home/posiden/Documents/GitHub/EES405/lab_session_02/sample-code.html" width="100%" height="500"></iframe>
         </div>
     </section>
 </article>
