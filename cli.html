@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CDO and Linux</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">EES405</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Resources</a></li>
+											<li><a href="elements.html">Courses/Syllabus</a></li>
+											<li><a href="#"></a>Discussion Forum</li>
+											<li><a href="#">Interactive Terminal</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+                <article id="main">
+                    <header>
+                        <h2>CDO and Linux</h2>
+                        <p>Introduction and setup for CDO and Linux environment used in the course</p>
+                    </header>
+                    <section class="wrapper style5">
+                        <div class="inner">
+                            <h3>Linux Commands for EES405</h3>
+                            <p>Linux is an incredibly versatile operating system, with a great level of efficiency and precision when handling files and processes. This becomes particularly relevant in climate science where researchers often have to deal with large datasets. Understanding basic Linux commands can streamline the process of managing, processing and analyzing these datasets.</p>
+                            <div class="code-wrapper">
+                                <pre id="code-block-2" class="code-block">
+                # Moving files or directories
+                mv source target
+                
+                # Copying files or directories
+                cp source target
+                
+                # Secure copy over SSH
+                scp source user@host:target
+                
+                # Listing files and directories
+                ls
+                
+                # Listing files with detailed information
+                ls -ls
+                
+                # Changing permissions (e.g., making a file executable)
+                chmod +x filename
+                                </pre>
+                                <button onclick="copyToClipboard('code-block-2')">Copy to Clipboard</button>
+                            </div>
+                            <hr>
+                            <h3>CDO Functions for EES405</h3>
+                            <p><strong>CDO</strong> (Climate Data Operators) is a collection of command line operators designed to work with climate and NWP model data. It is used extensively in the climate research community for the manipulation and analysis of climate data. Its efficiency in handling large datasets and flexibility with various file formats make it a powerful tool for working with climate data. Below are some example functions:</p>
+                            <div class="code-wrapper">
+                                <pre id="code-block-3" class="code-block">
+                # General syntax
+                cdo &lt;operator&gt; &lt;input files&gt; &lt;output files&gt;
+                
+                # Selecting a geographical region
+                cdo sellonlatbox,lon1,lon2,lat1,lat2 ifile ofile
+                
+                # Selecting specific months
+                cdo selmon,months ifile ofile
+                
+                # Selecting specific years
+                cdo selyear,years ifile ofile
+                
+                # Converting file format with reduced precision
+                cdo -r -f nc ifile ofile
+                                </pre>
+                                <button onclick="copyToClipboard('code-block-3')">Copy to Clipboard</button>
+                            </div>
+                            <p>For more details on CDO functions, refer to the <a href="https://code.mpimet.mpg.de/projects/cdo/embedded/index.html" target="_blank">official CDO documentation</a>.</p>
+                        </div>
+                    </section>
+                </article>
+                
+                
+
+<script>
+function copyToClipboard(elementId) {
+    var copyText = document.getElementById(elementId).innerText;
+
+    var textarea = document.createElement("textarea");
+    textarea.textContent = copyText;
+    textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        return document.execCommand("copy"); // Security exception may be thrown by some browsers.
+    } catch (ex) {
+        console.warn("Copy to clipboard failed.", ex);
+        return false;
+    } finally {
+        document.body.removeChild(textarea);
+    }
+}
+</script>
+
+                
+
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <!-- <li><a href="#" class="icon fas fa-globe"><span class="label">Website</span></a></li> -->
+                        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Weather and Climate Modelling Research Group (IISER Mohali)</li>
+                        <li>Design: <a href="https://github.com/shiv3679/EES405">Shiv Shankar Singh</a></li>
+                    </ul>
+                </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
