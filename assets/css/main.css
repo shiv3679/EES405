@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Written by <a href="http://github.com/shiv3679
+	" target="_blank">Shiv</a>
+	Website created for EES405 course at IISER Mohali 
+	<EMAIL> shivshankar3679@gmail.com</EMAIL>
 */
 
 html, body, div, span, applet, object,
@@ -4005,8 +4006,8 @@ input, select, textarea {
 		white-space: -o-pre-wrap;    /* Opera 7 */
 		word-wrap: break-word;       /* Internet Explorer 5.5+ */
 		overflow: auto;              /* Add horizontal scroll bar if needed */
-		width: 100%;                 /* Define width here */
+		width: 100%;                 
 		padding: 5px;
-		background-color: #f5f5f5;   /* Add a background color to the code block */
+		background-color: #f5f5f5;   /* Fallback color */
 	}
 	
