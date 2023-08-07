@@ -1,7 +1,0 @@
-cartopy
-xarray
-numpy
-matplotlib
-pandas
-netCDF4
-scipy
